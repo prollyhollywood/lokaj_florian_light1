@@ -1,7 +1,6 @@
-x = input.light_level()
 while True:
     print("Light Level:" + input.light_level())
-    if x > 1:
-        light.set_all(light.rgb(255,0,0))
+    if input.light_level() > 7:
+        light.set_all(light.rgb(0,0,0))
     else:
-        light.clear()
+        light.set_all(light.rgb(255,0,0))
